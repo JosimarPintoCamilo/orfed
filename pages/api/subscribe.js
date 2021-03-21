@@ -6,18 +6,18 @@ mailchimp.setConfig({
 });
 
 export default async (req, res) => {
-  const { email } = req.body;
+  const { email, MMERGE6, MMERGE2 } = req.body;
 
   if (!email) {
-    return res.status(400).json({ error: 'Email is required' });
+    return res.status(400).json({ error: 'Preencha com seu e-mail para enviar.' });
   }
 
   try {
     await mailchimp.lists.addListMember(process.env.MAILCHIMP_AUDIENCE_ID, {
       email_address: email,
       merge_fields: {
-        MMERGE6: "Pergunta 1",
-        MMERGE2: "Pergunta 2"
+        MMERGE6: MMERGE6,
+        MMERGE2: MMERGE2
       },
       tags: ["pag-incricao-semente-01"],
       status: 'subscribed'
@@ -25,6 +25,6 @@ export default async (req, res) => {
 
     return res.status(201).json({ error: '' });
   } catch (error) {
-    return res.status(500).json({ error: error.message || error.toString() });
+    return res.status(500).json({ error: error || error.toString() });
   }
 };
