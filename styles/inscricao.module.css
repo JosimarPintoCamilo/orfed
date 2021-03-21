@@ -1,0 +1,14 @@
+.container {
+  width: 50vw;
+  max-width: 720px;
+  margin: auto;
+}
+
+.container > h1 {
+  font-size: 4rem;
+}
+
+.container p {
+  font-size: 2rem;
+  color: #0d0d0d;
+}
