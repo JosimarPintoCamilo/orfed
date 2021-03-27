@@ -1,10 +1,12 @@
 import Head from 'next/head';
 import styles from '../styles/inscricao.module.css';
 import Subscribe from '../components/Subscribe';
+import Pixel from "../components/PixelFacebook"
 
 function Inscricao() {
     return (
         <div className={styles.container}>
+            <Pixel />
             <Head>
                 <title>Ajude</title>
                 <link rel="icon" href="/favicon.ico" />
