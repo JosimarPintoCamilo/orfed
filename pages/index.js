@@ -5,7 +5,7 @@ import Pixel from "../components/PixelFacebook"
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Pixel />
+      <Pixel Eventos={["PageView"]} />
       <Head>
         <title>Orfed</title>
         <link rel="icon" href="/favicon.ico" />

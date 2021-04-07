@@ -4,7 +4,7 @@ import Pixel from "../components/PixelFacebook"
 export default function PageObrigado(){
     return(
         <div>
-            <Pixel />
+            <Pixel Eventos={["PageView", "Lead"]}/>
             <Obrigado />
         </div>
         
