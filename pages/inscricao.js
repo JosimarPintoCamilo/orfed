@@ -6,7 +6,7 @@ import Pixel from "../components/PixelFacebook"
 function Inscricao() {
     return (
         <div className={styles.container}>
-            <Pixel Eventos={["ViewContent"]} />
+            <Pixel Eventos={["PageView", "ViewContent"]} />
             <Head>
                 <title>Ajude</title>
                 <link rel="icon" href="/favicon.ico" />
