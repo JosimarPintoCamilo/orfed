@@ -5,10 +5,11 @@ import Pixel from "../components/PixelFacebook"
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Pixel Eventos={["PageView"]} />
+      <Pixel Eventos={["ViewContent"]} />
       <Head>
         <title>Orfed</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="facebook-domain-verification" content="weawvzvamw10q3k6acxcc9u6ldamhi" />
       </Head>
 
       <main className={styles.main}>
