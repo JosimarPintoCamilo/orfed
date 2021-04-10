@@ -39,9 +39,9 @@ export default function Subscribe() {
 
   return (
     <form onSubmit={subscribe}>        
-      <h3>
+      <p>
         Quais são as duas coisas mais importantes para você sobre Seu Dinheiro que temos NECESSIDADE absoluta de ter em nosso aplicativo?
-      </h3>   
+      </p>   
       <input
         id="email-input"
         name="email"
