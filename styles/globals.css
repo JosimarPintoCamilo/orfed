@@ -6,6 +6,12 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+:root {
+  --border-radius: 5px;
+  --box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+  --verde-principal: #04bf55;
+  --verde-secundario: #27ae60;
+}
 html {
   font-size: 62.5%;
 }
